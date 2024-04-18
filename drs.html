@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="drs.css"><link rel="stylesheet" href="den.js">
+</head>
+<body ><h1>QArsalan</h1>
+  <div class="a">
+  <div class="calculator">
+    <form action="">
+<div class="display">
+  <input type="text" name="display" id="kars"></div>
+  <div class="menu">
+    <div class="elm">
+      <input type="button" name="" value="w"> 
+      <input type="button" name="" value="m">  
+      <input type="button" name="" value="e"   > 
+    </div>
+    <div class="sil">
+      <input id="x" type="button" name="" value="x" onclick="display.value= display.value.toString().slice(0,-1)" > 
+    </div>
+</div>
+<hr>
+<div>
+<input type="button"id="te"   value="C"  onclick="display.value= ' ' ">
+<input type="button" id="tel"  value="()"    >
+<input type="button" id="tel"  value="%" onclick="display.value +='/100'   ">
+<input type="button" id="tel"  value="/"  onclick="display.value +='/'   ">
+</div>
+<div>
+  <input type="button" value="7" onclick="display.value +='7'   ">
+  <input type="button" value="8"  onclick="display.value +='8'   ">
+  <input type="button" value="9"  onclick="display.value +='9'   ">
+  <input type="button" id="tel"  value="*" onclick="display.value +='*'   " >
+</div>   
+<div>
+  <input type="button" value="4"onclick="display.value +='4'   ">
+  <input type="button" value="5"onclick="display.value +='5'   "> 
+  <input type="button" value="6"onclick="display.value +='6'   ">
+  <input type="button"id="tel"   value="-" onclick="display.value +=' - '   ">
+</div><div>
+  <input type="button" value="1"onclick="display.value +='1'   ">
+  <input type="button" value="2"onclick="display.value +='2'   "> 
+  <input type="button" value="3"onclick="display.value +='3'   ">
+  <input type="button" id="tel"  value="+" onclick="display.value +='+'   ">
+</div><div>
+  <input type="button" value="+/-"onclick="display.value +='*-1' , display.value = eval(display.value)  ">
+  <input type="button" value="0"onclick="display.value +='0'  "> 
+  <input type="button" value="."onclick="display.value +='.'   ">
+  <input type="button" id="tel" class="ft"  value="="onclick="display.value = eval(display.value)  ">
+</div>
+    </form>
+  </div></div>
+</body>
+</html>
